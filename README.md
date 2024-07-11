@@ -5,10 +5,9 @@ Dette er et script som tar jubilant data fra NTB og formaterer den til bruk i Gr
 # 📦 For å kjøre:
 Programmet kan kun kjøres med .bat filen fra Windows PCer, men kan kjøres fra terminal i Windows, Mac og Linux
 
-### Struktur
-
+### Struktur 
 ```
-agp_question_formater-main
+gat_jubilant_formatter-main
 ├── jubilant_formatter.py
 ├── run_windows.bat <--- Dobbelttrykk denne for å kjøre
 │
