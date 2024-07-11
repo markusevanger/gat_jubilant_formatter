@@ -221,6 +221,8 @@ def createUpdatedStorage(persons, fileName):
 
 def main():
 
+    os.system('')
+
     fileName = "GAT_jubilant_03072024.csv"
     persons = createListOfPersons(fileName)
 
