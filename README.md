@@ -23,6 +23,6 @@ gat_jubilant_formatter-main
 + Pakk ut zip filen.  
 + Legg filer som skal formateres inn i "unformatted" mappen.
 + Kjør (dobbelttrykk) vedlagt .bat fil
-+ Jubilanter skal nå ligge i `GAT_Jubilanter-(dato).txt`. Disse kan du nå bruke i GAT :D
++ Jubilanter skal nå ligge i `GAT_Jubilanter_(dato).txt`. Disse kan du nå bruke i GAT :D
 
 > NB! Scriptet er ikke grundig testet og derfor burde det alltid dobbeltsjekkes om jubilanter er riktig! 
