@@ -188,7 +188,7 @@ def filterOut(persons):
                 print("|    |")
             else:
                 filteredPersons.remove(personFound)
-                print(f"|   |   ✔ Fjernet {personFound.firstname} {personFound.lastname} fra listen.")
+                print(f"|   |   ✔  Fjernet {personFound.firstname} {personFound.lastname} fra listen.")
                 print("|")
 
 
@@ -215,15 +215,23 @@ def createUpdatedStorage(persons, fileName):
 
     print("🗂️ Lagret filtret data i egen fil")
 
-
-
+def findCsvData():
+    
+    for file in os.listdir():
+        if ".csv" in file and "_formatted" not in file:
+            print(f"🔖 Fant fil: {file}")
+            return file
+    return None
+ 
 
 
 def main():
 
-    os.system('')
+    fileName = findCsvData()
+    if not fileName:
+        print("❌  Kunne ikke finne en .csv fil i mappen. Har du lagt den til i samme mappe som alle de andre filene?") 
+        return
 
-    fileName = "GAT_jubilant_03072024.csv"
     persons = createListOfPersons(fileName)
 
     print(f"✂️  Ønsker du å fjerne personer fra listen?")
