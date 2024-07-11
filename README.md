@@ -10,10 +10,8 @@ Programmet kan kun kjøres med .bat filen fra Windows PCer, men kan kjøres fra 
 gat_jubilant_formatter-main
 ├── jubilant_formatter.py
 ├── run_windows.bat <--- Dobbelttrykk denne for å kjøre
-│
 ├── 📄 Plasser uformaterte .csv fil her <----
-│
-└── 📥 GAT_jublianter.txt <---- Denne er output og genereres etter kjøring
+└── 📥 GAT_jublianter.txt <---- Dette er output og genereres etter kjøring
     
 ```
 
