@@ -19,7 +19,7 @@ gat_jubilant_formatter-main
 
 ### Stegvis
 
-#### Installering
+#### Førstegangs Installering
 > Ikke nødvendig, men for brukbarhet anbefaler jeg å installere windows terminal: [Link](https://www.microsoft.com/store/productId/9N0DX20HK701?ocid=pdpshare)
 + Du må ha python installert lokalt på maskinen din:  [Link](https://www.python.org/downloads/)
 + Trykk på grønn `<>Code` knapp oppe til høyre, og trykk "Download ZIP"
@@ -27,7 +27,7 @@ gat_jubilant_formatter-main
 
 #### Kjøring
 + Legg `.csv` fil fra NTB i samme mappe.
-+ Kjør (dobbelttrykk) vedlagt .bat fil
++ Kjør (dobbelttrykk) `run_windows.bat` fil
 + Jubilanter skal nå ligge i `GAT_Jubilanter_(dato).txt`. Disse kan du nå bruke i GAT :D
 
 > NB! Scriptet er ikke grundig testet og derfor burde det alltid dobbeltsjekkes om jubilanter er riktig! 
