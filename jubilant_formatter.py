@@ -73,7 +73,7 @@ def extractNumbers(stringWithNumbers):
 # Creates list of Persons from csv file. 
 def createListOfPersons(inputFile:str):
 
-    print("📖 Leser fil...", end="")
+    print("📖 Leser fil...")
     persons = []
 
     filteredFileName = f"{inputFile.strip('.csv')}_filtered.csv"
@@ -81,7 +81,7 @@ def createListOfPersons(inputFile:str):
         inputFile = filteredFileName
         print("(Bruker filtrert data)")
 
-    with open(inputFile, "r") as file:
+    with open(inputFile, "r", encoding="utf-8") as file:
         csvFile = csv.DictReader(file)
 
         for personData in csvFile:
@@ -135,7 +135,7 @@ tilfeller burde ting bli gjort manuelt.
 
     """
 
-    with open(outputName, "w") as file:
+    with open(outputName, "w", encoding="utf-8") as file:
 
         file.write(DISCLAIMER)
 
@@ -208,7 +208,7 @@ def createUpdatedStorage(persons, fileName):
     rows = []
     for person in persons:
         rows.append([person.dateRaw, person.age, person.firstname, person.lastname, person.place, person.zipcode, person.born])
-    with open(updatedStorageFileName, 'w') as csvfile:
+    with open(updatedStorageFileName, 'w', encoding="utf-8") as csvfile:
         csvwriter = csv.writer(csvfile)
         csvwriter.writerow(fields)
         csvwriter.writerows(rows)

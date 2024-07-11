@@ -1,2 +1,2 @@
-py "jubilant_formatter.py"
+python "jubilant_formatter.py"
 pause
