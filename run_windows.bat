@@ -9,4 +9,3 @@ IF %ERRORLEVEL% EQU 0 (
     REM wt.exe not found, fallback to cmd.exe
     cmd.exe /c python jubilant_formatter.py
 )
-pause

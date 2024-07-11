@@ -95,7 +95,7 @@ def createListOfPersons(inputFile:str):
                 born=personData[BORN]
             )
             persons.append(newPerson)
-    print("📖 Ferdig å lese fil")
+    print(f"📖 Ferdig å lese fil: {len(persons)} jubilanter")
     return persons
 
 # Takes list of Persons and makes a map where key is a datetime. 
@@ -242,5 +242,8 @@ def main():
     mappedPersons = mapPersonsToDate(filteredPersons) # map with date as key and list of persons as value. 
     write(mappedPersons)
     print("✅ Ferdig!")
+
+
+    input(f"Trykk {format.UNDERLINE}ENTER{format.END} for å avslutte")
     
 main()
