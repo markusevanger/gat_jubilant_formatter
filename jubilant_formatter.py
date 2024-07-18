@@ -152,7 +152,7 @@ tilfeller burde ting bli gjort manuelt.
                     file.write(f"\n{person.age} år \n")
                     lastAge = person.age
 
-                file.write(f"{person.firstname} {person.lastname}, {person.place}, fyller {person.age} år {person.date.day}. {getMonthName(date.month)}. \n")
+                file.write(f"{person.firstname} {person.lastname}, {person.place}, fyller {person.age} år {getDayName(person.date.weekday())} {person.date.day}. {getMonthName(date.month)}. \n")
 
     print(f"📝 Skrevet til {outputName}")
 
